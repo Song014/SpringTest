@@ -12,8 +12,9 @@
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 </head>
 <body>
-    <h1>wellcome to hello world</h1>
+    <h1>ajax test</h1>
     <input type="button"  value="유저 확인" onclick="findUser()">
+    <input type="button"  value="리셋" onclick="resetUser()">
     <div class="content">
 
     </div>
@@ -47,6 +48,10 @@
                     console.log(error);
                 }
             });
+        }
+
+        function resetUser(){
+            $(".content").html('');
         }
 
 
